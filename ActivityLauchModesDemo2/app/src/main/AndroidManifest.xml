@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lauchmodesdemo.youtube.codetutor.com.activitylauchmodesdemo2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/abc_btn_rating_star_off_mtrl_alpha"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity_A"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="lauchmodesdemo.youtube.codetutor.com.activitylauchmodesdemo2.Activity_B"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="lauchmodesdemo.youtube.codetutor.com.activitylauchmodesdemo2.Activity_C"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="lauchmodesdemo.youtube.codetutor.com.activitylauchmodesdemo2.Activity_D"
+            android:launchMode="standard"
+            android:taskAffinity="com.evs.test" />
+        <activity android:name="lauchmodesdemo.youtube.codetutor.com.activitylauchmodesdemo2.Activity_E" />
+    </application>
+
+</manifest>
