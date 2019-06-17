@@ -86,6 +86,13 @@ public class Activity_E extends BaseActivity {
     }
 
     @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(this,Activity_B.class);
+        finish();
+    }
+
+    @Override
     protected void onResume() {
         super.onResume();
         updateText();

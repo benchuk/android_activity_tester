@@ -2,6 +2,7 @@ package lauchmodesdemo.youtube.codetutor.com.activitylauchmodesdemo2;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -25,6 +26,7 @@ public class Activity_B extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d(TAG,"onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_b);
 

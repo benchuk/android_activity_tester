@@ -11,15 +11,18 @@
         <activity
             android:name=".Activity_A"
             android:launchMode="standard">
+
+        </activity>
+
+        <activity
+            android:name="lauchmodesdemo.youtube.codetutor.com.activitylauchmodesdemo2.Activity_B"
+             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity
-            android:name="lauchmodesdemo.youtube.codetutor.com.activitylauchmodesdemo2.Activity_B"
-            android:launchMode="singleTask" />
         <activity
             android:name="lauchmodesdemo.youtube.codetutor.com.activitylauchmodesdemo2.Activity_C"
             android:launchMode="singleInstance" />
@@ -28,6 +31,15 @@
             android:launchMode="standard"
             android:taskAffinity="com.evs.test" />
         <activity android:name="lauchmodesdemo.youtube.codetutor.com.activitylauchmodesdemo2.Activity_E" />
+
+        <receiver android:name=".Recevier"
+            android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.everysight.test.ready" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
